@@ -1,0 +1,37 @@
+{
+  "name": "fast-dependencies-analyzer-webpack-plugin",
+  "version": "0.0.1",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --quiet --ext .ts,.js,.vue"
+  },
+  "dependencies": {
+    "git-range-files": "^1.2.0",
+    "gonzales-pe": "^4.3.0",
+    "minimatch": "^3.0.4",
+    "webpack-merge": "^5.7.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,vue}": [
+      "npm run lint",
+      "git add"
+    ],
+    "*.{md,scss}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
