@@ -1,8 +1,17 @@
 {
   "name": "fast-dependencies-analyzer-webpack-plugin",
-  "version": "0.0.1",
-  "private": false,
+  "description": "A webpack plugin to analyzer file dependencies",
+  "version": "0.0.2",
   "main": "index.js",
+  "private": false,
+  "keywords": [
+    "fast dependencies analyzer",
+    "fast",
+    "dependencies",
+    "analyzer",
+    "webpack",
+    "webpack plugin"
+  ],
   "scripts": {
     "lint": "eslint --quiet --ext .ts,.js,.vue"
   },
@@ -13,11 +22,10 @@
     "webpack-merge": "^5.7.3"
   },
   "devDependencies": {
-    "eslint": "^7.17.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^7.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "prettier": "^2.2.1"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
   },
   "husky": {
     "hooks": {
@@ -33,5 +41,26 @@
       "prettier --write",
       "git add"
     ]
-  }
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "maxming",
+      "email": "maxming2333@gmail.com"
+    }
+  ],
+  "homepage": "https://github.com/maxming2333/fast-dependencies-analyzer-webpack-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:maxming2333/fast-dependencies-analyzer-webpack-plugin.git",
+    "web": "https://github.com/maxming2333/fast-dependencies-analyzer-webpack-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxming2333/fast-dependencies-analyzer-webpack-plugin/issues",
+    "email": "maxming2333@gmail.com"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "author": "maxming <maxming2333@gmail.com> (http://maxming.me)"
 }
