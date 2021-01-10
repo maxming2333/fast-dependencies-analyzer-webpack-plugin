@@ -1,7 +1,7 @@
 {
   "name": "fast-dependencies-analyzer-webpack-plugin",
   "description": "A webpack plugin to analyzer file dependencies",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "private": false,
   "keywords": [
